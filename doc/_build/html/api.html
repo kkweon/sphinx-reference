@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The trianglelib API reference &#8212; trianglelib 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Quick Reference" href="quick_reference.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-trianglelib">
+<span id="the-trianglelib-api-reference"></span><h1>The trianglelib API reference<a class="headerlink" href="#module-trianglelib" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-trianglelib.shape">
+<span id="the-shape-module"></span><h2>The “shape” module<a class="headerlink" href="#module-trianglelib.shape" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="trianglelib.shape.Triangle">
+<em class="property">class </em><code class="descclassname">trianglelib.shape.</code><code class="descname">Triangle</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>A triangle is a three-sided polygon.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#trianglelib.shape.Triangle.area" title="trianglelib.shape.Triangle.area"><code class="xref py py-obj docutils literal"><span class="pre">area</span></code></a>()</td>
+<td>Return the area of this triangle.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#trianglelib.shape.Triangle.is_equilateral" title="trianglelib.shape.Triangle.is_equilateral"><code class="xref py py-obj docutils literal"><span class="pre">is_equilateral</span></code></a>()</td>
+<td>Return whether this triangle is equilateral.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#trianglelib.shape.Triangle.is_isosceles" title="trianglelib.shape.Triangle.is_isosceles"><code class="xref py py-obj docutils literal"><span class="pre">is_isosceles</span></code></a>()</td>
+<td>Return whether this triangle is isoceles.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#trianglelib.shape.Triangle.is_similar" title="trianglelib.shape.Triangle.is_similar"><code class="xref py py-obj docutils literal"><span class="pre">is_similar</span></code></a>(triangle)</td>
+<td>Return whether this triangle is similar to another triangle.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#trianglelib.shape.Triangle.perimeter" title="trianglelib.shape.Triangle.perimeter"><code class="xref py py-obj docutils literal"><span class="pre">perimeter</span></code></a>()</td>
+<td>Return the perimeter of this triangle.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#trianglelib.shape.Triangle.scale" title="trianglelib.shape.Triangle.scale"><code class="xref py py-obj docutils literal"><span class="pre">scale</span></code></a>(factor)</td>
+<td>Return a new triangle, <cite>factor</cite> times the size of this one.</td>
+</tr>
+</tbody>
+</table>
+<p>Triangle Yeah</p>
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a triangle with sides of lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : float</p>
+<p><strong>b</strong> : float</p>
+<p><strong>c</strong> : float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><strong>ValueError</strong></p>
+<blockquote class="last">
+<div><p>Raises <cite>ValueError</cite> if the three length values
+provided cannot actually form a triangle.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.area">
+<code class="descname">area</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the area of this triangle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.is_equilateral">
+<code class="descname">is_equilateral</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_equilateral"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_equilateral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this triangle is equilateral.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.is_isosceles">
+<code class="descname">is_isosceles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_isosceles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_isosceles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this triangle is isoceles.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.is_similar">
+<code class="descname">is_similar</code><span class="sig-paren">(</span><em>triangle</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.is_similar"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.is_similar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether this triangle is similar to another triangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>triangle</strong> : <cite>Triangle</cite></p>
+<blockquote>
+<div><p>Triangle object</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">bool</p>
+<blockquote class="last">
+<div><p>True if it&#8217;s similar</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.perimeter">
+<code class="descname">perimeter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.perimeter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.perimeter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the perimeter of this triangle.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="trianglelib.shape.Triangle.scale">
+<code class="descname">scale</code><span class="sig-paren">(</span><em>factor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/shape.html#Triangle.scale"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.shape.Triangle.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a new triangle, <cite>factor</cite> times the size of this one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>factor</strong> : float</p>
+<blockquote>
+<div><p>Multiplier</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Triangle</p>
+<blockquote class="last">
+<div><p>Triangler of which size is multiplied by <cite>factor</cite></p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-trianglelib.utils">
+<span id="the-utils-module"></span><h2>The “utils” module<a class="headerlink" href="#module-trianglelib.utils" title="Permalink to this headline">¶</a></h2>
+<p>Routines to test triangle properties without explicit instantiation.</p>
+<dl class="function">
+<dt id="trianglelib.utils.compute_area">
+<code class="descclassname">trianglelib.utils.</code><code class="descname">compute_area</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#compute_area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.compute_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the area of the triangle with side lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<p>If the three lengths provided cannot be the sides of a triangle,
+then the area 0 is returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="trianglelib.utils.compute_perimeter">
+<code class="descclassname">trianglelib.utils.</code><code class="descname">compute_perimeter</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#compute_perimeter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.compute_perimeter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the perimeer of the triangle with side lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite>.</p>
+<p>If the three lengths provided cannot be the sides of a triangle,
+then the perimeter 0 is returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="trianglelib.utils.is_equilateral">
+<code class="descclassname">trianglelib.utils.</code><code class="descname">is_equilateral</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_equilateral"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_equilateral" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an equilateral triangle.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="trianglelib.utils.is_isosceles">
+<code class="descclassname">trianglelib.utils.</code><code class="descname">is_isosceles</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_isosceles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_isosceles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, and <cite>c</cite> are an isosceles triangle.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="trianglelib.utils.is_triangle">
+<code class="descclassname">trianglelib.utils.</code><code class="descname">is_triangle</code><span class="sig-paren">(</span><em>a</em>, <em>b</em>, <em>c</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/trianglelib/utils.html#is_triangle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#trianglelib.utils.is_triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether lengths <cite>a</cite>, <cite>b</cite>, <cite>c</cite> can be the sides of a triangle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : float</p>
+<p><strong>b</strong> : float</p>
+<p><strong>c</strong> : float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">bool</p>
+<blockquote class="last">
+<div><p>Returns True if triangle</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#trianglelib.utils.is_equilateral" title="trianglelib.utils.is_equilateral"><code class="xref py py-obj docutils literal"><span class="pre">is_equilateral</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">trianglelib.utils</span> <span class="k">import</span> <span class="n">is_triangle</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">is_triangle</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The trianglelib API reference</a><ul>
+<li><a class="reference internal" href="#module-trianglelib.shape">The “shape” module</a></li>
+<li><a class="reference internal" href="#module-trianglelib.utils">The “utils” module</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quick_reference.html" title="previous chapter">Quick Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Mo Kweon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
